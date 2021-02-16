@@ -10,11 +10,12 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .main {
     background: white;
-    min-height: 80vh;
+    min-height: 100%;
     min-width: 60%;
     background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.35),
     rgba(255, 255, 255, 0.35));
@@ -29,8 +30,127 @@ main {
     min-width: 10%;
     background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.15),
     rgba(255, 255, 255, 0.15));
-    border-radius: 2rem;
+    border-radius: 2rem 2rem 0rem 0rem;
     z-index: 4;
+}
+
+.user {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-family: 'Armata', sans-serif;
+    display: grid;
+}
+
+
+.user h2, .contacts h3 {
+    background-image: linear-gradient(to right top, #004d96, #038ab3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 0rem 0rem 1.5rem 0rem;
+}
+
+.user img {
+    height: 9rem;
+    width: 8rem;
+    border-radius: 2rem;
+}
+
+.user p {
+    font-style: italic;
+    text-shadow: 2px 2px 5px white;
+}
+
+.education {
+    font-family: 'Armata', sans-serif;
+    position: relative;
+    width: 40%;
+    margin-left: 30%;
+    padding-bottom: 2rem;
+}
+
+.education h2 {
+    background-image: linear-gradient(to right top, #0e004e, #0bceff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.education .edu_img {
+    border-radius: 2rem;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.15),
+    rgba(255, 255, 255, 0.15));
+    height: 15rem;
+    width: 15rem;
+    opacity: 1;
+    display: inline-block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    margin-left: 25%;
+}
+
+.education .description_edu {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    width: 40%;
+    height: 45%;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.15),
+    rgba(255, 255, 255, 0.15));
+    border-radius: 1rem;
+    margin-left: 51.5%;
+    margin-top: -25%;
+}
+.education:hover .edu_img {
+    opacity: 0.15;
+}
+
+.education:hover .description_edu {
+    opacity: 1;
+}
+
+.education p {
+    padding: 2rem;
+    color: #0e004e;
+    font-weight: bold;
+}
+
+.projects {
+    font-family: 'Armata', sans-serif;
+    position: relative;
+    width: 100%;
+    padding-bottom: 2rem;
+}
+
+.projects .project_img {
+    border-radius: 2rem;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.15),
+    rgba(255, 255, 255, 0.15));
+    height: 15rem;
+    width: 15rem;
+    opacity: 1;
+    display: grid
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.projects:hover .project_img {
+    opacity: 0.15;
+}
+
+.projects h2 {
+    background-image: linear-gradient(to right top, #0e004e, #0bceff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: center;
 }
 
 .contacts {
@@ -39,12 +159,15 @@ main {
     background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.15),
     rgba(255, 255, 255, 0.15));
     border-radius: 0rem 0rem 2rem 2rem;
-    margin-top: 60%;
-    z-index: 5;
+    z-index: 4;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2rem 2rem;
+}
+
+.contacts img {
+    width: 3rem;
+    height: 3rem;
 }
 
 .circle1 {
@@ -73,27 +196,6 @@ main {
     z-index: 1; /* bigger index = more front*/
 }
 
-.user {
-    align-items: center;
-    justify-content: center;
-    padding: 2rem 2rem;
-    font-size: 1rem;
-    font-family: 'Rubik', sans-serif;
-}
-
-.user h3, .contacts h3 {
-    color: #0153a0;
-    padding: 0rem 0rem 2rem 0rem;
-}
-
-.user img {
-    height: 9.5rem;
-    width: 7.5rem;
-    border-radius: 2rem;
-    padding-bottom: 1rem;
-}
-
-.contacts img {
-    width: 3rem;
-    height: 3rem;
+span {
+    margin-left: 20%;
 }
