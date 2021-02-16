@@ -47,6 +47,8 @@ main {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding: 0rem 0rem 1.5rem 0rem;
+    display: flex;
+    justify-self: left;
 }
 
 .user img {
@@ -120,30 +122,58 @@ main {
     font-weight: bold;
 }
 
-.projects {
+.project1 {
     font-family: 'Armata', sans-serif;
     position: relative;
-    width: 100%;
-    padding-bottom: 2rem;
+    width: 30%;
+    display: inline-block;
 }
 
-.projects .project_img {
+.project1 .project_img {
     border-radius: 2rem;
     background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.15),
     rgba(255, 255, 255, 0.15));
     height: 15rem;
     width: 15rem;
     opacity: 1;
-    display: grid
+    display: grid;
     transition: .5s ease;
     backface-visibility: hidden;
+    margin-left: 15%;
 }
 
-.projects:hover .project_img {
+
+.project1 .description_project {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    height: 80%;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.15),
+    rgba(255, 255, 255, 0.15));
+    border-radius: 1rem;
+    margin-left: 165.5%;
+    margin-top: -32.5%;
+}
+
+.project1:hover .description_project {
+    opacity: 1;
+}
+
+.project1 p {
+    padding: 2rem;
+    color: #0e004e;
+    font-weight: bold;
+}
+
+.project1:hover .project_img {
     opacity: 0.15;
 }
 
-.projects h2 {
+.project1 h2 {
     background-image: linear-gradient(to right top, #0e004e, #0bceff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -153,6 +183,126 @@ main {
     justify-content: center;
 }
 
+.project2 {
+    font-family: 'Armata', sans-serif;
+    position: relative;
+    width: 30%;
+}
+
+.project2 .project_img {
+    border-radius: 2rem;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.15),
+    rgba(255, 255, 255, 0.15));
+    height: 15rem;
+    width: 15rem;
+    opacity: 1;
+    display: grid;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    margin-left: 15%;
+}
+
+.project2 .description_project {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    height: 80%;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.15),
+    rgba(255, 255, 255, 0.15));
+    border-radius: 1rem;
+    margin-left: -67.5%;
+    margin-top: -32.5%;
+}
+
+.project2:hover .description_project {
+    opacity: 1;
+}
+
+.project2 p {
+    padding: 2rem;
+    color: #0e004e;
+    font-weight: bold;
+}
+
+.project2:hover .project_img {
+    opacity: 0.15;
+}
+
+.project2 h2 {
+    background-image: linear-gradient(to right top, #0e004e, #0bceff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.project3 {
+    font-family: 'Armata', sans-serif;
+    position: relative;
+    width: 30%;
+    margin-left: 35%;
+    display: flex;
+    align-self: center;
+}
+
+.project3 .project_img {
+    border-radius: 2rem;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.15),
+    rgba(255, 255, 255, 0.15));
+    height: 15rem;
+    width: 15rem;
+    opacity: 1;
+    display: grid;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    margin-left: 15%;
+}
+
+.project3 .description_project {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    height: 120%;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.15),
+    rgba(255, 255, 255, 0.15));
+    border-radius: 1rem;
+    margin-left: 49%;
+    margin-top: -73%;
+}
+
+.project3:hover .description_project {
+    opacity: 1;
+}
+
+.project3 p {
+    padding: 2rem;
+    color: #0e004e;
+    font-weight: bold;
+}
+
+.project3:hover .project_img {
+    opacity: 0.15;
+}
+
+.project3 h2 {
+    background-image: linear-gradient(to right top, #0e004e, #0bceff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+}
 .contacts {
     background: white;
     min-height: 10vh;
@@ -198,4 +348,15 @@ main {
 
 span {
     margin-left: 20%;
+}
+
+h2 {
+    font-family: 'Armata', sans-serif;
+    background-image: linear-gradient(to right top, #0e004e, #0bceff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: center;
 }
