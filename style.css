@@ -21,11 +21,10 @@ main {
     rgba(255, 255, 255, 0.35));
     border-radius: 2rem;
     z-index: 3;
-    backdrop-filter: blur(1rem);
+    backdrop-filter: blur(1.25rem);
 }
 
 .profile {
-    background: white;
     min-height: 30vh;
     min-width: 10%;
     background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.15),
